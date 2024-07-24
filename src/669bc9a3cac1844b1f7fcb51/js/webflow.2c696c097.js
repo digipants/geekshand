@@ -1248,7 +1248,7 @@
           var shouldBrand = $html.attr("data-wf-status");
           var publishedDomain = $html.attr("data-wf-domain") || "";
           if (/\.webflow\.io$/i.test(publishedDomain) && location.hostname !== publishedDomain) {
-            shouldBrand = true;
+            shouldBrand = False;
           }
           if (shouldBrand && !isPhantom) {
             brandElement = brandElement || createBadge();
