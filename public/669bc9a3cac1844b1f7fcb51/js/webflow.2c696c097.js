@@ -1248,7 +1248,7 @@
           var shouldBrand = $html.attr("data-wf-status");
           var publishedDomain = $html.attr("data-wf-domain") || "";
           if (/\.webflow\.io$/i.test(publishedDomain) && location.hostname !== publishedDomain) {
-            shouldBrand = true;
+            shouldBrand = False;
           }
           if (shouldBrand && !isPhantom) {
             brandElement = brandElement || createBadge();
@@ -1267,7 +1267,7 @@
             marginRight: "4px",
             width: "26px"
           });
-          var $logoText = $2("<img>").attr("src", "https://geekshand.com/669bc9a3cac1844b1f7fcb51/logo.png").attr("alt", "Made in Webflow");
+          var $logoText = $2("<img>").attr("src", "https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-text-d2.c82cec3b78.svg").attr("alt", "Made in Webflow");
           $brand.append($logoArt, $logoText);
           return $brand[0];
         }
